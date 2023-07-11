@@ -3,12 +3,10 @@ from tkinter import ttk, font, messagebox
 from tkinter import *
 import functions
 import re
-from pymongo.mongo_client import MongoClient
-from pymongo.server_api import ServerApi
 import pymongo
 
 myclient = pymongo.MongoClient(
-    "mongodb+srv://gdtall:LtjjDyRa0S06jneh@cluster0.ysnuirr.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb://localhost:27017/"
 )
 mydb = myclient["telefono"]
 mycol = mydb["contactos"]

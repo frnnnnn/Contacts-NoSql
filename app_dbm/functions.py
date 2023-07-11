@@ -6,16 +6,16 @@ import re
 import tkinter as tk
 from tkinter import ttk, font, messagebox
 from tkinter import *
-import functions2
 from main import add_set
 
 
 
 myclient = pymongo.MongoClient(
-    "mongodb+srv://gdtall:LtjjDyRa0S06jneh@cluster0.ysnuirr.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb://localhost:27017/"
 )
 mydb = myclient["telefono"]
 mycol = mydb["contactos"]
+
 
 
 
